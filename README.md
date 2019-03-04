@@ -10,7 +10,7 @@ In order to run example:
  - after configuration is done, hit: `make`
  - executable will appear in `bin/` directory
 
-#Simplified sequence of function calls
+# Simplified sequence of function calls
 
 ```c++
 // get server instance
