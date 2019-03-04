@@ -9,3 +9,26 @@ In order to run example:
  - go to build directory and type: `cmake ../example/`
  - after configuration is done, hit: `make`
  - executable will appear in `bin/` directory
+
+#Simplified sequence of function calls
+
+```c++
+// get server instance
+auto& server = Tcp_server::get_instance();
+
+// set number of consumers threads
+server.set_number_of_consumers(3);
+
+// initialize server - bind to the port, e.t.c.
+server.initialize();
+
+// run server and consumers threads with defined handler
+server.start_server( [&server](int client_socket){
+  // your own code to handle the connections
+  // for example:
+  server.send_data_to_client(client_socket, "Hello");
+} );
+
+// in order to join threads, Tcp_server::stop_server must be called
+server.join_threads();
+```
