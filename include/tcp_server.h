@@ -1,14 +1,7 @@
 #ifndef _TCPSERVER_H_
 #define _TCPSERVER_H_
 
-#include <iostream>
-#include <string>
-#include <thread>
-#include <sys/socket.h>
-#include <arpa/inet.h>
 #include <netinet/in.h>
-#include <sys/types.h>
-#include <sys/fcntl.h>
 
 #include "tcp_server_exceptions.h"
 #include "socket_queue.h"
