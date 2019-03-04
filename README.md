@@ -27,7 +27,7 @@ server.start_server( [&server](int client_socket){
   // your own code to handle the connections
   // for example:
   auto recv_msg = server.recv_data_from_client(client_socket);
-  server.send_data_to_client(client_socket, "Data recieved");
+  server.send_data_to_client(client_socket, "Data has been recieved");
 } );
 
 // in order to join threads, Tcp_server::stop_server must be called
