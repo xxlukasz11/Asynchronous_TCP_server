@@ -4,7 +4,7 @@ set(CMAKE_BINARY_DIR ${CMAKE_SOURCE_DIR}/../build)
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/../bin)
 set(LIBRARY_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/../bin)
 
-set(CMAKE_CXX_COMPILER "g++-8")
+set(CMAKE_CXX_COMPILER "g++")
 
 project (server_example)
 
